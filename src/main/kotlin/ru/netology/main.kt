@@ -7,7 +7,7 @@ fun main() {
         likes += 1
         Thread.sleep(500)
 
-        var pp = if (likes % 10 != 1 || likes % 100 == 11) "людям" else "человеку"
-        println("Понравилось $likes $pp ")
+        val ending = if (likes % 10 != 1 || likes % 100 == 11) "людям" else "человеку"
+        println("Понравилось $likes $ending ")
     }
 }
